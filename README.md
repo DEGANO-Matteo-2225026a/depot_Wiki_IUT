@@ -1,39 +1,27 @@
 # depot_Wiki_IUT
 depot wiki IUT info aix
-mes-m2
 ======
 
-Making Mes.c M2-Planet friendly
+Création du fichier markdown pour le TD1 : Langages de balisage léger 
+Ce fichier présentera la création de notre présentation sous la forme de wiki 
 
-Goal
+BUT DU PROJET
 ----
+Le but de se projet étais donc de s'initier à la création d'un site sous la forme de wiki. Cela nous servira par la suite pour créer d'autre site wiki accessible gratuitement. 
 
-The goal of this project is to provide a minimally-adapted GNU Mes which can be compiled by M2-Planet
-and is able to compile the real GNU Mes (and thereby run mescc).
-
-Status
+DEMONSTRATION
 ------
 
-Completed for x86 but porting to M2libc to accelerate architecture porting is not done.
+Pour créer le site wiki nous avons utiliser le site wikidot (http://www.wikidot.com). C'est un site simple d'utilisation malgrès qu'il soit vieux et manque de documentation. Le point positif c'est que nous n'avons pas à payer de server pour que notre site soit accessible par tout le monde.
 
-Just run:
+Lors de la creation du site nous avons acces a un interface en markdown permettant d'écrire le contenue de notre site et de faire notre mise en forme.
+Voici par exemple le type de commande utilisée
 
-$ make mes-m2-boot
-
-You can try running mescc like this
-
-```ShellSession
-MES_ARENA=20000000
-MES_MAX_ARENA=20000000
-MES_STACK=6000000
-export MES_ARENA  MES_MAX_ARENA MES_STACK
-$ ./bin/mes --no-auto-compile -L ../nyacc-1.00.2/module/  -e main scripts/mescc.scm -I include -v -S scaffold/exit-42.c -o foo.S
+```MarkdownSession 
+[[table style="width: 100%"]] //créer un tableau pour placer des images
+++* Définition Générale : //Créer un titre en gras 
+[[toc]] //Créer un sommaire grace à une énumeration de [[toc]]
++ Croissance et couleur //Créer un sous-titre 
 ```
 
-You can also compare the execution with guile:
 
-```ShellSession
-$ guile --no-auto-compile -L ../nyacc-1.00.2/module/ -L module -e main scripts/mescc.scm -I include -v -S scaffold/exit-42.c -o foo2.S
-```
-
-to compile using the MesCC and nyacc included here.

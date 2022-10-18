@@ -1,7 +1,8 @@
 Dépot wiki IUT info aix 2022
 ======
 
-Création du fichier markdown pour le TD1 : Langages de balisage léger 
+Création du fichier markdown pour le TD1 : Langages de balisage léger.   
+  
 Ce fichier présentera la création de notre présentation sous la forme de wiki 
 
 BUT DU PROJET
